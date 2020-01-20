@@ -1,5 +1,5 @@
 node('devenv') {
-    stage('build') {
+    stage('checkout') {
         checkout scm: scm
     }
     stage('build') {
