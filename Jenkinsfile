@@ -3,7 +3,8 @@ node('devenv') {
         checkout scm: scm
     }
     stage('build') {
-        sh 'echo "this is a build command place holder"'
+        sh 'this is failed build'
+         error 'this build failed'
     }
     stage('deploy') {
         sh 'rm /usr/share/nginx/html/index.html'
